@@ -1,0 +1,51 @@
+1 ) public class Calculator {
+    public int add(int... numbers) {
+        int sum = 0;
+        for (int number : numbers) {
+            sum += number;
+        }
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+        System.out.println(calculator.add(10, 20, 30)); 
+        System.out.println(calculator.add(10, 20)); 
+    }
+
+2) 2 ) public class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    public int add(int a, int b, int c) {   6
+        return a + b + c;
+    }
+
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+        System.out.println(calculator.add(10, 20)); 
+        System.out.println(calculator.add(10, 20, 30)); 
+    }
+}
+
+3) public class Car {
+    private String color;
+    private int year;
+
+    // Constructor
+    public Car(String color, int year) {
+        this.color = color;
+        this.year = year;
+    }
+
+    public void displayInfo() {
+        System.out.println("Car color: " + color);
+        System.out.println("Car year: " + year);
+    }
+
+    public static void main(String[] args) {
+        Car myCar = new Car("Red", 2022);
+        myCar.displayInfo();
+    }
+}
